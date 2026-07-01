@@ -55,11 +55,19 @@ export default function ProductPage() {
     const addItem = useCartStore((state) => state.addItem)
     const [addedId, setAddedId] = useState<string | null>(null)
 
+   
+
     const handleAddToCart = (product) => {
-        addItem({ id: product.id, name: product.name, price: product.price })
+        addItem({
+          id: product.id,
+          name: product.name,
+          price: product.price,
+          image: product.image,        // <-- EI LINE TA ADD KORO
+          description: product.description, // <-- optional
+        })
         setAddedId(product.id)
         setTimeout(() => setAddedId(null), 1200)
-    }
+      }
 
     return (
         <div   className="min-h-screen bg-white"  >

@@ -4,12 +4,22 @@
 import { create } from 'zustand'
 import { persist, createJSONStorage } from 'zustand/middleware'
 
-export interface CartItem {
+// export interface CartItem {
+//   id: string
+//   name: string
+//   price: number
+//   qty: number
+// }
+
+interface CartItem {
   id: string
   name: string
   price: number
   qty: number
+  image?: string // <-- add this
+  description?: string
 }
+
 
 export interface Customer {
   name: string

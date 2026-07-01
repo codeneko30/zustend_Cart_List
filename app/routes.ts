@@ -5,7 +5,8 @@ export default [
     index("routes/products.tsx"),
     route('cart','routes/cart.tsx'),
     route('checkout','routes/checkout.tsx'),
-    route('order','routes/order-confirmation.tsx')
+    route('order','routes/order-confirmation.tsx'),
+    
     
 
 
