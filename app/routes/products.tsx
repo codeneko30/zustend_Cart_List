@@ -3,14 +3,7 @@ import { useCartStore } from '../store/cartStore'
 import { Link } from "react-router";
 
 
-// const products = [
-//     { id: 'p01', name: 'Ceramic Mug', price: 18, description: 'Stoneware mug, 340ml capacity.' },
-//     { id: 'p02', name: 'Dinner Plate', price: 24, description: 'Matte glaze plate, 27cm diameter.' },
-//     { id: 'p03', name: 'Bud Vase', price: 32, description: 'Single-stem vase, 15cm tall.' },
-//     { id: 'p04', name: 'Prep Bowl Set', price: 36, description: 'Set of 3 nesting bowls.' },
-//     { id: 'p05', name: 'Pour-Over Carafe', price: 48, description: 'Coffee carafe, 900ml capacity.' },
-//     { id: 'p06', name: 'Butter Dish', price: 22, description: 'Fluted lid, fits 250g block.' },
-// ]
+
 
 
 const products = [
@@ -69,6 +62,7 @@ export default function ProductPage() {
     }
 
     return (
+        <div   className="min-h-screen bg-white"  >
         <div className="mx-auto max-w-5xl px-4 py-10">
             <h1 className="text-3xl font-bold text-gray-900">Products</h1>
             <p className="mt-1 text-gray-500">Browse our items and add them to your cart.</p>
@@ -128,6 +122,8 @@ export default function ProductPage() {
 
 
             </div>
+        </div>
+
         </div>
     )
 }
